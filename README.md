@@ -36,8 +36,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| DVWA 1     | Webserver |            | Linux            |
-| DVWA 2     |   Web Server |            | Linux            |
+| Webset1     | Webserver |            | Linux            |
+| Webset2     |   Web Server |            | Linux            |
 | ELK     |    Monitoring      |            | Linux            |
 
 ### Access Policies
@@ -79,6 +79,7 @@ Metric Beat
 File Beat
 
 These Beats allow us to collect the following information from each machine:
+
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 ### Using the Playbook
