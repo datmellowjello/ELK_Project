@@ -6,10 +6,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - DVWA
-  - Filebeat
-  - Metricbeat
-  - ELK Stack
+  - [DVWA](https://https://github.com/datmellowjello/ELK_Project/blob/main/Playbooks/DVWA)
+  - [Filebeat](https://https://github.com/datmellowjello/ELK_Project/blob/main/Playbooks/filebeat-playbook)
+  - [Metricbeat](https://https://github.com/datmellowjello/ELK_Project/blob/main/Playbooks/metricbeat-playbook)
+  - [ELK](https://https://github.com/datmellowjello/ELK_Project/blob/main/Playbooks/elk-install)
 
 This document contains the following details:
 - Description of the Topology
