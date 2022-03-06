@@ -117,6 +117,10 @@ SSH into the control node and follow the steps below:
 - Update the hosts by using 'nano /etc/ansible/hosts'
 - update the hosts to include a group called '[elk]' with the private ip for your ELK VM
 - run the playbook
+- 
+
+![Alt text](/Screenshots/elkmetricvbeaTCONFIRMED.PNG?raw=true)
+
 
 ### Using the Filebeat Playbook
 
@@ -128,4 +132,4 @@ SSH into the control node and follow the steps below:
 - run the playbook by using 'ansible-playbok filebeat-playbook.yml'
 - Navigate to Kibana in your browser inside filebeat and click "Check Data" to confirm it is working
 
-<insert photo here>
+![Alt text](/Screenshots/filebeatconfirmed.PNG?raw=true)
