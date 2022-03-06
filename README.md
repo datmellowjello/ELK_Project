@@ -99,10 +99,33 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the ELK (what) file to /etc/ansible.
+- Copy the yml file to /etc/ansible.
 - Update the hosts file to include your webserver private IPs and elk IP.  Also include "ansible_python_interpreter=/user/bin/python3" to use python as the interpreting language.
 - Run the playbook by using 'ansible-playbook install-elk.yml' located in '/etc/ansible/hosts/ directory
-- We updated the hosts file in order to let Ansible know which specific machine to install the ELK server to vs Filebeat and Metricbeat.
+- Update the hosts file in order to let Ansible know which specific machine to install the ELK server to vs Filebeat and Metricbeat.
 - Navigate to 'http://ELK-Server-Public-IP:5601/app/kibana' to confirm it is working
 
 ![Alt text](/Screenshots/elkkibanaweb.PNG?raw=true)
+
+
+### Using the Metricbeat Playbook
+
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
+SSH into the control node and follow the steps below:
+- copy the metricbeat yml file to /etc/ansible
+- Update the hosts by using 'nano /etc/ansible/hosts'
+- update the hosts to include a group called '[elk]' with the private ip for your ELK VM
+- run the playbook
+
+### Using the Filebeat Playbook
+
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
+SSH into the control node and follow the steps below:
+- copy the filebeat yml file to /etc/ansible
+- Update the hosts by using 'nano /etc/ansible/hosts'
+- run the playbook by using 'ansible-playbok filebeat-playbook.yml'
+- Navigate to Kibana in your browser inside filebeat and click "Check Data" to confirm it is working
+
+<insert photo here>
