@@ -101,12 +101,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the ELK (what) file to /etc/ansible.
 - Update the hosts file to include your webserver private IPs and elk IP.  Also include "ansible_python_interpreter=/user/bin/python3" to use python as the interpreting language.
-- Run the playbook, and navigate to the ELK Server's IP address to check that the installation worked as expected.
-
-![Alt text](/Screenshots/elkkibanaweb.PNG?raw=true)
-
 - Run the playbook by using 'ansible-playbook install-elk.yml' located in '/etc/ansible/hosts/ directory
 - We updated the hosts file in order to let Ansible know which specific machine to install the ELK server to vs Filebeat and Metricbeat.
-- _Which URL do you navigate to in order to check that the ELK server is running?
-- Navigate to 'http://<ELK-Server-Public-IP>:5601/app/kibana
+- Navigate to 'http://ELK-Server-Public-IP:5601/app/kibana' to confirm it is working
 
+![Alt text](/Screenshots/elkkibanaweb.PNG?raw=true)
